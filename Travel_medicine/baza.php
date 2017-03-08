@@ -3,7 +3,7 @@
     array(
       'Kraj' => 'Zjednoczone Emiraty Arabskie',
       'Id' => 'country_AE',
-      'Opis' => '<div>Blabla Emiraty</div>',
+      'Opis' => '',
       'Path' => 'M619.87,393.72L620.37,393.57L620.48,394.41L622.67,393.93L624.99,394.01L626.68,394.1L628.6,392.03L630.7,390.05L632.47,388.15L633,389.2L633.38,391.64L631.95,391.65L631.72,393.65L632.22,394.07L630.95,394.67L630.94,395.92L630.12,397.18L630.05,398.39L629.48,399.03L621.06,397.51L619.98,394.43z'
     ),
     array(
@@ -1059,7 +1059,8 @@
     array (
         'Kraj' => 'Zimbabwe',
         'Id' => 'country_ZW',
-        'Opis' => '<div>Zimbabwe</div>',
+        'Opis' => 'WZW B',
+        'OpisDod' => 'WZW C',
         'Path' => 'M562.71,527L561.22,526.7L560.27,527.06L558.92,526.55L557.78,526.52L555.99,525.16L553.82,524.7L553,522.8L552.99,521.75L551.79,521.43L548.62,518.18L547.73,516.47L547.17,515.95L546.09,513.6L549.22,513.92L550.13,514.26L551.08,514.19L552.63,512.3L555.07,509.9L556.08,509.68L556.42,508.67L558.01,507.52L560.14,507.12L560.32,508.2L562.66,508.14L563.96,508.75L564.56,509.47L565.9,509.68L567.35,510.62L567.36,514.31L566.81,516.35L566.69,518.55L567.14,519.43L566.83,521.17L566.4,521.44L565.66,523.59z'
     ),
     
@@ -1068,9 +1069,20 @@
   foreach( $kraje as $kraj ){
 ?>
 
-    <a id="<?php echo $kraj['Id']; ?>" data-title="<?php echo $kraj['Kraj']; ?>" data-description="<?php echo $kraj['Opis']; ?>">
+    <a id="<?php echo $kraj['Id']; ?>" data-title="<?php echo $kraj['Kraj']; ?>" data-description="<?php echo $kraj['Opis']; ?>" data-name="<?php echo $kraj['OpisDod']; ?>">
       <path d="<?php echo $kraj['Path']; ?>"/>
     </a>
 <?php
   }
 ?>
+
+<!--
+   $("a").click(function() {
+        var countryDesc = $(this).data('description');
+        var countryDesc2 = $(this).data('descriptionDod');
+        var countryName = $(this).data('title');
+        var test = $('.test');   
+    
+    var newDiv = $("<div>" + countryName + "</div>" + "<div class='box required'>" + countryDesc + "</div>" + "<div class='box advised'>" + countryDesc2 + "</div>");
+    test.after(newDiv);
+-->

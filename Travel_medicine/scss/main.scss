@@ -151,17 +151,6 @@ table {
     text-align: center;
 }
 
-.vax_info {
-    position: absolute;
-    width: 40%;
-    height: 65%;
-    border: 2px solid #2e2e2e;
-    top: 10%;
-    left: 35%;
-    background: grey;
-    opacity: 0.9;
-    margin-top: 5%;
-}
 
 // Map
 
@@ -187,6 +176,36 @@ table {
     display: none;
 }
 
+.vax_info {
+    position: absolute;
+    width: 40%;
+    height: 65%;
+    border: 2px solid #2e2e2e;
+    top: 10%;
+    left: 35%;
+    background: ivory;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.box {
+    width: 100%;
+    margin: 0 auto 15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.required {
+    background: #EBB1B1;
+    border-color: #973939;
+}
+
+.advised {
+    background: #FFF484;
+    border-radius: #DCC600;
+}
 // Button X
 .button_x {
     cursor: pointer;
