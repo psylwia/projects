@@ -1,9 +1,4 @@
-* {
-//    border: 1px solid red;
-}
-
 body, html {
-//    height: 100hv;
     font-family: 'Mukta Vaani', sans-serif;
     font-size: 18px;
     overflow-x: hidden;
@@ -13,75 +8,6 @@ body, html {
     width: 80%;
     margin: 0 auto;
 }
-
-nav ul li:hover a {
-    background: #ddd;
-}
-
-#logo_menu {
-    text-transform: uppercase;
-    float: left;
-    margin: 10px 5px;
-    text-shadow: 1px 1px 1px #222;
-    font-size: 1.8em;
-	font-weight: bold;
-}
-
-header {
-    margin-top: 20px;
-}
-
-nav {
-    float: right;
-//    margin: 10px 5px;
-}
-
-nav ul li {
-    display: inline-block;
-    position: relative;
-    margin-top: 10px;
-
-}
-//
-ul li a {
-    padding: 8px 8px;
-//    color: white;
-    text-decoration: none;
-    display: block;
-    border-bottom: 1px solid #666;
-    -webkit-transition:  background 0.3s ease-in-out;
-    -moz-transition:  background 0.3s ease-in-out;
-    -ms-transition:  background 0.3s ease-in-out;
-    -o-transition:  background 0.3s ease-in-out;
-    transition:  background 0.3s ease-in-out;
-}
-
-li:hover ul {
-	display:block;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-.active { 
-    background-color: #ccc; 
-}
-
-.main_text {
-    padding: 5%;
-    float: left;
-    text-align: left;
-    line-height: 30px;
-    width: 80%;
-        ul {
-            li {
-                list-style: url(../images/Globe-128.png);
-            }
-        }
-
-    }
 
 h1, h2, h3 {
     text-align: center;
@@ -100,19 +26,89 @@ h2 {
 h3 {
     font-size: 1.2rem;
 }
+
+// Header
+
+header {
+    margin-top: 20px;
+}
+#logo_menu {
+    text-transform: uppercase;
+    float: left;
+    margin: 10px 0;
+    text-shadow: 1px 1px 1px #222;
+    font-size: 1.6em;
+	font-weight: bold;
+}
+nav {
+    float: right;
+    
+    ul li {
+        display: inline-block;
+        position: relative;
+        margin-top: 10px;
+        
+        a {
+            padding: 8px 8px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #666;
+            -webkit-transition:  background 0.3s ease-in-out;
+            -moz-transition:  background 0.3s ease-in-out;
+            -ms-transition:  background 0.3s ease-in-out;
+            -o-transition:  background 0.3s ease-in-out;
+            transition:  background 0.3s ease-in-out;
+            &:hover {
+            background: #ddd;
+            } 
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.active { 
+    background-color: #ccc; 
+}
+
+//Main section
+
+.main_text {
+    padding: 5%;
+    float: left;
+    text-align: left;
+    line-height: 30px;
+    width: 80%;
+        ul {
+            li {
+                list-style: url(../images/Globe-128.png);
+            }
+        }
+
+    }
+
+
 aside {
     float: right;
     width: 20%;
     margin-top: 5%;
 
     .logos {
-
         img {
             display: block;
             margin: 0 auto;
         }
     }
 }
+
+.main_content {
+    width: 100%;
+}
+
+// Footer
 
 footer {
     div {
@@ -122,53 +118,53 @@ footer {
     }
 }
 
-.main_content {
-    width: 100%;
-}
-
-
+// Table - Cennik
 table {
-color: #333;
-//font-family: Helvetica, Arial, sans-serif;
-width: 80%;
-border-collapse:
-collapse; border-spacing: 0;
-
+    width: 80%;
     margin: 10px auto 30px;
-    
-}
-
-td, th {
-border: 1px solid transparent; /* No more visible border */
-height: 30px;
-transition: all 0.3s; /* Simple transition for hover effect */
-}
-
-th {
-background: #DFDFDF; /* Darken header a bit */
-font-weight: bold;
-}
-
-td {
-    background: #FAFAFA;
-    text-align: left;
-    padding: 5px;
-}
-
-tr:hover{ 
-    td {
-    background: #666; 
-    color: #ccc; 
+    td, th {
+        border: 1px solid #333;
+        transition: all 0.3s;
+        background: #FAFAFA;
+        text-align: left;
+        padding: 3px;
     }
-} 
+    th {
+        background: #DFDFDF;
+        font-weight: bold;
+        text-align: center;
+    }
+    tr:hover{ 
+        td {
+        background: #666; 
+        color: #ccc; 
+        }
+    } 
+}
 
 .vax {
     background: #aaa;
     text-align: center;
 }
+
 .vax_price {
     text-align: center;
 }
+
+.vax_info {
+    position: absolute;
+    width: 40%;
+    height: 65%;
+    border: 2px solid #2e2e2e;
+    top: 10%;
+    left: 35%;
+    background: grey;
+    opacity: 0.9;
+    margin-top: 5%;
+}
+
+// Map
+
 .map {
     width: 80%;
     height: auto;
@@ -187,22 +183,11 @@ tr:hover{
     fill: #333;
 }
 
-.vax_info {
-    position: absolute;
-    width: 40%;
-    height: 65%;
-    border: 2px solid #2e2e2e;
-    top: 10%;
-    left: 35%;
-    background: grey;
-    opacity: 0.9;
-    margin-top: 5%;
-}
-
 .hidden {
     display: none;
 }
 
+// Button X
 .button_x {
     cursor: pointer;
     height: 24px;
@@ -223,6 +208,7 @@ tr:hover{
     stroke: white;
 }
 
+// Contact
 #tel_number {
     text-align: center;
     font-weight: 700;
@@ -243,18 +229,18 @@ iframe {
         width: 50%;
         float: left;
     }
-
     #map_polna {
         width: 50%;
         float: right;
     }
-    
-    .tel_info {
+     .tel_info {
         text-align: center;
         padding: 20px;
     }
 }
 
+
+// Certificate - CSS effect
 .shine figure {
 	position: relative;
     width: 600px;
