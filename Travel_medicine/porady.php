@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,12 +14,13 @@
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
     <script src="js/jquery-jvectormap-2.0.3.min.js"></script>
+<!--    <script src="jquery-jvectormap-world-mill.js"></script>-->
     
 </head>
 <body>
     <header>
         <div class="container clearfix">
-            <div id="logo_menu"><a href="index.html">Poradnia Medycyny Podróży</a></div>
+              <div id="logo_menu"><a href="index.html">Poradnia Medycyny Podróży</a></div>
             <nav>
             <ul>
                 <li><a href="index.html">Strona główna</a></li>
@@ -36,7 +36,7 @@
     
     <section class="section"> 
         <div class="container clearfix">
-         <ul class="bxslider">
+                <ul class="bxslider">
               <li><img src="images/1.jpg" /></li>
               <li><img src="images/2.jpg" /></li>
               <li><img src="images/3.jpg" /></li>
@@ -45,27 +45,36 @@
               <li><img src="images/6.jpg" /></li>
             </ul>
 
-                <div class="main_content">
-                    <h1>Kontakt</h1>
-                    <div class="kontakt clearfix">
-                        <div>
-                            <p class='tel_info'>Rejestracja telefoniczna i porady na temat zalecanych szczepień oraz ustalanie indywidualnego programu szczepień pod numerem telefonu:<br>
-                            <a href="callto:696 650 175" id="tel_number">696 650 175</a>
-                            Umawiamy na konkretne godziny - szanujemy Państwa czas.</p>
-                        </div>
-                        <div id="kontakt_polna">
-
-                    <p><strong>Zakład Podstawowej Opieki Zdrowotnej "PULS"</strong><br />Poradnia Medycyny Podróży<br /> ul. Polna 29<br /> 62-800 Kalisz</p>
-                    </div>
-                    <div id="map_polna">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.0294478364463!2d18.076855301299442!3d51.750785081589505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ac5eb5e8c6877%3A0xdd65c059257777e0!2sPolna+29%2C+Kalisz!5e0!3m2!1spl!2spl!4v1487932020444" allowfullscreen></iframe>
-                    </div>
-                    </div>
                 
+                <div class='map' id="map">
+                    <h1>Mapa szczepień</h1>
+                    
+                    <div class="map_image">
+
+                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1005 669">
+                       
+                       <?php include('baza.php');?>
+</svg>
+
+                        
+        <section class="vax_info hidden">
+                <svg class="button_x">
+                    <circle cx="12" cy="12" r="11" stroke="black" stroke-width="2" fill="white" />
+                    <path stroke="black" stroke-width="4" fill="none" d="M6.25,6.25,17.75,17.75" />
+                    <path stroke="black" stroke-width="4" fill="none" d="M6.25,17.75,17.75,6.25" />
+                </svg>   
+            <div class="test">
+                
+            </div>
+        </section>
+                        
+                        
+                    </div>
+                    
+                </div>
             
        
                 </div>   
-            </div>
     </section>
     
     <footer>
@@ -73,7 +82,7 @@
             <span>Copyright (c)2017 PULS Sp. z o.o.</span>
         </div>
     </footer>
-      <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
