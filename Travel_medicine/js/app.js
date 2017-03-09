@@ -4,22 +4,24 @@ $(document).ready(function(){
 
 // Zawartość okna z informacją o szczepieniach 
    $(".map_image a").click(function() {
-        var countryDesc = $(this).data('description');
-        var countryDesc2 = $(this).data('name');
         var countryName = $(this).data('title');
+        var vaxRutine = $(this).data('rutine');
+        var vaxRequired = $(this).data('required');
+        var vaxAdvised = $(this).data('advised');
         var test = $('.test');   
     
-    var newDiv = $("<div>" + countryName + "</div>" + "<div class='box required'>Szczepienia wymagane:</div><div>" + countryDesc + "</div>" + "<div class='box advised'>Szczepienia zalecane:</div><div>" + countryDesc2 + "</div>");
-    test.after(newDiv);   
+    var newDiv = $("<button class='button_x'>X</button><div class='box country'>" + countryName + "</div>" +  "<div class='box rutine'>Szczepienia rutynowe:</div><div class='box'>" + vaxRutine + "</div>" + "<div class='box required'>Szczepienia wymagane:</div><div class='box'>" + vaxRequired + "</div>" + "<div class='box advised'>Szczepienia zalecane:</div><div class='box'>" + vaxAdvised + "</div>");
+    test.html(newDiv);
+    
  
 // Funkcjonalność guzika zamknięcia okna
-    $('.button_x').click(function(){
+       var button = $('button');
+    $(button).click(function(){
+        console.log('click');
         $('.vax_info').addClass('hidden');
-        newDiv.empty();
     });
-       
-    });       
-   
+            
+ });  
 // Podświetlenie aktywnej strony    
     var url = window.location.href; 
 
@@ -42,6 +44,7 @@ paths.forEach(function (path) {
        });
        
       document.querySelector('#country_' + id).classList.add('active');
+
    });
    
    path.addEventListener('click', function(e){

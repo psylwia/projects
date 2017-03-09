@@ -87,10 +87,7 @@ a {
                 list-style: url(../images/Globe-128.png);
             }
         }
-
     }
-
-
 aside {
     float: right;
     width: 20%;
@@ -176,6 +173,10 @@ table {
     display: none;
 }
 
+.test {
+    position: relative;
+}
+
 .vax_info {
     position: absolute;
     width: 40%;
@@ -186,46 +187,48 @@ table {
     background: ivory;
     margin-top: 5%;
     border-radius: 10px;
+    overflow-y: auto;
+    font-size: 0.9rem;
 }
 
 .box {
     width: 100%;
-    margin: 0 auto 15px;
+    margin: 0 auto 10px;
     text-align: center;
-    padding: 10px;
-    font-weight: bold;
     border-radius: 10px;
+}
+
+.country {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0 auto;
 }
 
 .required {
     background: #EBB1B1;
     border-color: #973939;
+    font-weight: bold;
+    padding: 10px;
 }
 
 .advised {
     background: #FFF484;
-    border-radius: #DCC600;
+    border-color: #DCC600;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.rutine {
+    background: lightgreen;
+    border-color: darkgreen;
+    font-weight: bold;
+    padding: 10px;
 }
 // Button X
 .button_x {
-    cursor: pointer;
-    height: 24px;
-    width: 24px;
     float: right;
 }
-.button_x > circle {
-    stroke: black;
-    fill: white;
-}
-.button_x > path {
-    stroke: black;
-}
-.button_x:hover > circle {
-    fill: grey;
-}
-.button_x:hover > path {
-    stroke: white;
-}
+
 
 // Contact
 #tel_number {
@@ -294,4 +297,33 @@ iframe {
 	100% {
 		left: 125%;
 	}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1265px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    html, body {
+        font-size: 14px;
+    }
+    
+    .required, .rutine, .advised {
+        padding: 2px;
+    }
+    
+    .certificate{
+        width: 400px;
+    }
 }

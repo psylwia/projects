@@ -14,7 +14,6 @@
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
     <script src="js/jquery-jvectormap-2.0.3.min.js"></script>
-<!--    <script src="jquery-jvectormap-world-mill.js"></script>-->
     
 </head>
 <body>
@@ -58,11 +57,6 @@
 
                         
                     <section class="vax_info hidden">
-                        <svg class="button_x">
-                            <circle cx="12" cy="12" r="11" stroke="black" stroke-width="2" fill="white" />
-                            <path stroke="black" stroke-width="4" fill="none" d="M6.25,6.25,17.75,17.75" />
-                            <path stroke="black" stroke-width="4" fill="none" d="M6.25,17.75,17.75,6.25" />
-                        </svg>   
                         <div class="test">
                         </div>
                     </section>
