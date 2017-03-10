@@ -1,0 +1,159 @@
+$green-color: #388407;
+$darkgrey-color: #5E5C5E;
+$lightgrey-color: #BBBABB;
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+// ***** Header ***** //
+
+.header {
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 5px;
+//    background: $lightgrey-color;
+}
+
+.menu {
+    ul {
+        li {
+           display: inline-block;
+            padding: 10px 0;
+            a {
+                transition: 0.4s;
+                color: $darkgrey-color;
+                font-size: 16px;
+                padding: 0 10px;
+                margin: 0 10px;
+                border-top: 3px solid #fff;
+                border-bottom: 3px solid #fff;
+                &:hover {
+                    border-top: 3px solid $darkgrey-color;
+                    border-bottom: 3px solid $darkgrey-color;
+                    padding: 8px 10px;
+                    background-color: #fff;
+                    color: $green-color;
+                }
+            }
+        }
+    }
+}
+
+
+.social_icon {
+    width: 40px;
+    height: 40px;
+}
+
+// ***** Logo and Category Menu ***** //
+#logo {
+    display: block;
+    margin: 0 auto;
+    padding: 25px;   
+}
+
+.categories {
+    justify-content: center;
+    border: 1px solid $lightgrey-color;
+}
+
+// ***** Small Photos Section ***** //
+.small_photos {
+    justify-content: space-between;
+    margin-top: 25px;
+    .small_photo {
+        position: relative;
+        width: 360px;
+        height: 240px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: 1px solid $lightgrey-color;
+    }
+        #photo_1 {
+           background-image: url(../images/brownie.JPG);
+        }
+        #photo_2 {
+            background-image: url(../images/zupa.JPG);
+        }
+        #photo_3 {
+            background-image: url(../images/pasta.JPG);
+        }
+    
+}
+
+.small_photo_title{ 
+    width: 100%; 
+    height: 80px; 
+    background:#FFF; 
+    opacity:0.75;
+    position: absolute;
+    bottom: 0;
+    font-size: 16px; 
+    font-weight:700; 
+    padding: 15px; 
+    
+} 
+.small_photo:hover{ 
+    -moz-box-shadow: 1px 1px 1px $darkgrey-color; 
+    -webkit-box-shadow: 1px 1px 1px $darkgrey-color; 
+    box-shadow: 1px 1px 1px $darkgrey-color;
+}
+
+// ***** Main Section ***** //
+.main_section {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px;
+    .articles {
+        width: 75%;
+        article {
+            height: 300px;
+            border: 1px solid $lightgrey-color;
+            padding: 10px;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-around;
+            img {
+                float: left;
+                width: 350px;
+            }
+            p {
+                padding: 15px;
+                margin: 15px;
+                font-size: 1.05rem;
+            }
+        }
+    }
+    .aside {
+        width: 20%;
+        padding: 10px;
+    }
+}
+
+// ***** Main Section ***** //
+footer {
+    padding: 10px 0;
+}
+    .copy {
+    text-align: center;
+        margin: 0 auto;
+    }
