@@ -1,0 +1,145 @@
+$darkbrown: #39251a;
+$lightbrown: #6b5645;
+$grey: #8f9190;
+$lightgrey: #dcd9d4;
+
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background: $lightbrown;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+// ***** Header ***** //
+
+header {
+    background: $darkbrown;
+}
+
+.header {
+    padding: 10px;
+    justify-content: center;
+}
+
+.menu {
+    ul {
+        li {
+           display: inline-block;
+            padding: 10px 0;
+            a {
+                transition: 0.4s;
+                color: $lightgrey;
+                text-transform: uppercase;
+                font-size: 16px;
+                padding: 0 10px;
+                margin: 0 10px;
+                font-weight: bold;
+                &:hover {
+                    padding: 20px;
+                    background-color:$lightbrown;
+                }
+            }
+        }
+    }
+}
+
+
+// ***** Logo and Slider ***** //
+.logo {
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    color: $lightgrey;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 50px;
+    span {
+        font-size: 25px;
+        padding: 10px;
+    }
+}
+
+// ***** Main Section ***** //
+
+.small_photos {
+    justify-content: space-between;
+    margin: 25px auto;
+    .small_photo {
+        position: relative;
+        width: 32%;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid $grey;
+    }
+        #photo_1 {
+           background-image: url(../images/M16_1054a.jpg);
+        }
+        #photo_2 {
+            background-image: url(../images/M16_1059a.jpg);
+        }
+        #photo_3 {
+            background-image: url(../images/M16_1136.jpg);
+        }
+    
+}
+
+.small_photo_title{ 
+    width: 100%; 
+    height: 50px; 
+    background: $darkbrown;
+    color: $lightgrey;
+    opacity:0.8;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px; 
+    font-weight:700; 
+    padding: 15px;
+    text-align: center;
+    .small_photo_desc {
+        display: none;
+    }
+} 
+.small_photo:hover{ 
+    -moz-box-shadow: 2px 2px 2px $darkbrown; 
+    -webkit-box-shadow: 2px 2px 2px $darkbrown; 
+    box-shadow: 2px 2px 2px $darkbrown;
+    transition: 0.5;
+    .small_photo_title {
+    height: 100px;
+        .small_photo_desc {
+            padding: 5px;
+            display: table;
+            font-size: 16px;
+            font-weight: normal;
+            margin: 0 auto;
+            
+        }
+    }
+}
+
+// ***** Footer ***** //
+footer {
+    padding: 10px 0;
+}
+    .copy {
+    text-align: center;
+        margin: 0 auto;
+    }
