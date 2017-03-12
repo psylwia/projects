@@ -1,13 +1,12 @@
-$darkbrown: #39251a;
-$lightbrown: #6b5645;
-$grey: #8f9190;
-$lightgrey: #dcd9d4;
+$darkbrown: #83756D;
+$grey: #898D8B;
+$creme: #FADFD1;
+$darkblue: #253044;
 
 
 body {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    background: $lightbrown;
 }
 
 .container {
@@ -18,7 +17,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #000;
 }
 
 h2 {
@@ -44,15 +42,14 @@ header {
             padding: 10px 0;
             a {
                 transition: 0.4s;
-                color: $lightgrey;
+                color: $creme;
                 text-transform: uppercase;
                 font-size: 16px;
                 padding: 0 10px;
                 margin: 0 10px;
                 font-weight: bold;
                 &:hover {
-                    padding: 20px;
-                    background-color:$lightbrown;
+                    color: $darkblue;
                 }
             }
         }
@@ -66,7 +63,7 @@ header {
     padding: 40px;
     font-size: 60px;
     font-weight: bold;
-    color: $lightgrey;
+    color: $darkblue;
     text-align: center;
     margin-bottom: 10px;
     line-height: 50px;
@@ -104,8 +101,8 @@ header {
 .small_photo_title{ 
     width: 100%; 
     height: 50px; 
-    background: $darkbrown;
-    color: $lightgrey;
+    background: $creme;
+    color: $darkblue;
     opacity:0.8;
     position: absolute;
     bottom: 0;
@@ -118,9 +115,6 @@ header {
     }
 } 
 .small_photo:hover{ 
-    -moz-box-shadow: 2px 2px 2px $darkbrown; 
-    -webkit-box-shadow: 2px 2px 2px $darkbrown; 
-    box-shadow: 2px 2px 2px $darkbrown;
     transition: 0.5;
     .small_photo_title {
     height: 100px;
@@ -132,6 +126,17 @@ header {
             margin: 0 auto;
             
         }
+    }
+}
+
+// ***** Newsletter ***** //
+.newsletter {
+    background: $darkbrown;
+    justify-content: center;
+    color: $creme;
+    padding: 20px;
+    form {
+        padding: 10px;
     }
 }
 
