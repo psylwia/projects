@@ -1,7 +1,7 @@
 $darkbrown: #83756D;
 $grey: #898D8B;
 $creme: #FADFD1;
-$darkblue: #000060;
+$darkblue: #092b75;
 
 
 body {
@@ -60,19 +60,8 @@ header {
 // ***** Logo and Slider ***** //
 .logo {
     margin: 0 auto;
-    padding: 40px;
-    font-size: 60px;
-    font-weight: bold;
-    color: $darkblue;
-    text-align: center;
+    padding: 30px;
     margin-bottom: 10px;
-    line-height: 50px;
-    font-family: 'Dancing Script', cursive;
-    span {
-        font-size: 30px;
-        padding: 10px;
-//        text-transform: lowercase;
-    }
 }
 
 // ***** Main Section ***** //
