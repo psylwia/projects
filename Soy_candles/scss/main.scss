@@ -1,16 +1,16 @@
 $darkbrown: #83756D;
 $grey: #898D8B;
 $creme: #FADFD1;
-$darkblue: #253044;
+$darkblue: #000060;
 
 
 body {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-family: 'Cousine', monospace;
 }
 
 .container {
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
     display: flex;
 }
@@ -67,13 +67,27 @@ header {
     text-align: center;
     margin-bottom: 10px;
     line-height: 50px;
+    font-family: 'Dancing Script', cursive;
     span {
-        font-size: 25px;
+        font-size: 30px;
         padding: 10px;
+//        text-transform: lowercase;
     }
 }
 
 // ***** Main Section ***** //
+
+.about {
+    padding: 20px;
+    line-height: 22px;
+    width: 80%;
+}
+
+.social {
+    width: 20%;
+}
+
+
 
 .small_photos {
     justify-content: space-between;
