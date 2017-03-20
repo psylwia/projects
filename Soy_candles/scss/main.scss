@@ -5,7 +5,7 @@ $darkblue: #092b75;
 
 
 body {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -60,7 +60,6 @@ button {
                 transition: 0.4s;
                 color: #000;
                 text-transform: uppercase;
-                font-size: 1.2rem;
                 padding: 0 10px;
                 margin: 0 10px;
                 font-weight: bold;
@@ -84,27 +83,10 @@ button {
 // ***** Logo and Slider ***** //
 .logo {
     margin: 0 auto;
-    padding: 30px;
-    margin-bottom: 10px;
-}
-
-.bxslider {
-    
-    #li1 {
-        background-image: url(../images/slider_3.jpg);
-        height: 600px;
-        background-size: cover;
-    } 
-    #li2 {
-        background-image: url(../images/slider_4.jpg);
-        height: 600px;
-        background-size: cover;
-    } 
-    #li3 {
-        background-image: url(../images/slider_5.jpg);
-        height: 600px;
-        background-size: cover;
-    } 
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: auto;
 }
 
 // ***** Main Section ***** //
