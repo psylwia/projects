@@ -19,13 +19,13 @@ body {
 a {
     text-decoration: none;
     &:hover {
-        color: $darkblue;
+        color: inherit;
     }
     &:active {
-        color: $darkblue;
+        color: inherit;
     }
     &:visited {
-        color: $darkblue;
+        color: inherit;
     }
 }
 
@@ -84,7 +84,7 @@ button {
     padding-top: 5px;
     justify-content: flex-end;
     i {
-        font-size: 18px;
+        font-size: 1.2rem;
         padding: 5px;
     }
     &:hover {
@@ -104,17 +104,18 @@ button {
     position: relative;
     p {
         position: absolute;
-        background: #fff;
-        opacity: 0.8;
-        width: 25%;
-        height: 15%;
+//        background: #fff;
+//        opacity: 0.8;
+//        width: 25%;
+//        height: 15%;
         text-align: center;
-        padding: 25px;
-        bottom: 5%;
+        padding: 15px;
+        bottom: 1%;
         z-index: 2;
-        font-size: 28px;
-        color: $darkblue;
-        text-transform: uppercase;
+        font-size: 3rem;
+        color: #fff;
+//        text-transform: uppercase;
+        font-family: "Allura", cursive;
     }
 }
 
@@ -230,3 +231,29 @@ footer {
         padding: 15px;
     }
 }
+//
+///********** Medium devices only **********/
+//@media (min-width: 992px) and (max-width: 1291px) {
+//    html, body {
+//        font-size: 16px;
+//    }
+//    .bxslider {
+//        p {
+//            font-size: 0.5rem;
+//        }
+//    }
+//}
+//
+///********** Small devices only **********/
+//@media (min-width: 768px) and (max-width: 991px) {
+//    html, body {
+//        font-size: 16px;
+//    }
+//}
+//
+///********** Extra small devices only **********/
+//@media (max-width: 767px) {
+//    html, body {
+//        font-size: 14px;
+//    }
+//}
