@@ -44,9 +44,9 @@ button {
     height: 40px;
     border: 1px solid #fff;
     color: #fff;
-    border-radius: 12rem;
     background: transparent;
     font-size: 1.1rem; 
+    text-transform: uppercase;
 //    padding: 5px;
     &:hover {
         border: 2px solid #fff;
@@ -202,14 +202,14 @@ button {
 .newsletter {
    background: $darkblue;
     margin: 0 auto;
-    padding: 50px;
+    padding: 40px;
     color: #fff;
-    justify-content: space-between;
-    div {
-        margin: 0 auto;
-    }
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
         h2 {
-        padding: 20px;
+        padding: 10px;
+            line-height: 30px;
         }   
 }
 // ***** Footer ***** //
@@ -231,6 +231,38 @@ footer {
         padding: 15px;
     }
 }
+
+// ***** Popup ***** //
+.popup {
+    background-image: url(../images/popup.jpg);
+    background-size: cover; 
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -235px;
+    top: 5%;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 20px;
+    border: 5px solid #fff;
+    .popuptext {
+
+    }
+}
+.hidden {
+    display: none;
+}
+
+.button_x {
+    float: right;
+    width: auto;
+    border: 0;
+    &:hover {
+        border: 0;
+    }
+}
+
 //
 ///********** Medium devices only **********/
 //@media (min-width: 992px) and (max-width: 1291px) {
