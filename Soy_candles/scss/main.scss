@@ -18,6 +18,15 @@ body {
 
 a {
     text-decoration: none;
+    &:hover {
+        color: $darkblue;
+    }
+    &:active {
+        color: $darkblue;
+    }
+    &:visited {
+        color: $darkblue;
+    }
 }
 
 h1 {
@@ -31,16 +40,16 @@ h2 {
 }
 
 button {
-    width: 220px;
-    height: 50px;
-    border: 1px solid $darkblue;
-    color: $darkblue;
+    width: 160px;
+    height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
     border-radius: 12rem;
     background: transparent;
     font-size: 1.1rem; 
 //    padding: 5px;
     &:hover {
-        border: 2px solid $darkblue;
+        border: 2px solid #fff;
         font-weight: bold;
     }
 }
@@ -74,10 +83,12 @@ button {
 .social_icons {
     padding-top: 5px;
     justify-content: flex-end;
-    .social_icon {
-        width: 30px;
-        height: 30px;
-        padding: 2px;
+    i {
+        font-size: 18px;
+        padding: 5px;
+    }
+    &:hover {
+        color: $darkblue;
     }
 }
 
@@ -87,6 +98,24 @@ button {
     margin-bottom: 5px;
     width: 300px;
     height: auto;
+}
+
+.bxslider {
+    position: relative;
+    p {
+        position: absolute;
+        background: #fff;
+        opacity: 0.8;
+        width: 25%;
+        height: 15%;
+        text-align: center;
+        padding: 25px;
+        bottom: 5%;
+        z-index: 2;
+        font-size: 28px;
+        color: $darkblue;
+        text-transform: uppercase;
+    }
 }
 
 // ***** Main Section ***** //
@@ -145,10 +174,12 @@ button {
     bottom: 0;
     font-size: 18px; 
     font-weight:700; 
-    padding: 10px;
+    padding: 7px;
     text-align: center;
+    text-transform: uppercase;
     .small_photo_desc {
         display: none;
+        text-transform: none;
     }
 } 
 .small_photo:hover{ 
@@ -166,16 +197,13 @@ button {
     }
 }
 
-.buttons {
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
 // ***** Newsletter ***** //
 .newsletter {
    background: $darkblue;
     margin: 0 auto;
     padding: 50px;
     color: #fff;
+    justify-content: space-between;
     div {
         margin: 0 auto;
     }
@@ -183,12 +211,22 @@ button {
         padding: 20px;
         }   
 }
-
 // ***** Footer ***** //
 footer {
-    padding: 10px 0;
+    margin-top: 20px;
 }
-    .copy {
-    text-align: center;
-        margin: 0 auto;
+
+.footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    div {
+        width: 33%;
+        text-align: center;
+        text-transform: uppercase;
     }
+    .copy {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+}
