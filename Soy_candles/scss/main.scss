@@ -71,7 +71,7 @@ button {
                 color: #000;
                 text-transform: uppercase;
                 padding: 0 10px;
-                margin: 0 10px;
+                margin: 0 2px;
                 font-weight: bold;
                 &:hover {
                     color: $darkblue;
@@ -127,7 +127,7 @@ button {
     text-align: justify;
 }
 
-.small_photos {
+.small_photos, .small_photos_second_section {
     justify-content: space-between;
     margin: 25px auto;
     .small_photo {
@@ -173,7 +173,7 @@ button {
     opacity:0.9;
     position: absolute;
     bottom: 0;
-    font-size: 18px; 
+    font-size: 1.1rem; 
     font-weight:700; 
     padding: 7px;
     text-align: center;
@@ -190,7 +190,7 @@ button {
         .small_photo_desc {
             padding: 5px;
             display: table;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: normal;
             margin: 0 auto;
             
@@ -247,7 +247,11 @@ footer {
     padding: 20px;
     border: 5px solid #fff;
     .popuptext {
-
+        padding: 20px;
+        margin-top: 5%;
+    }
+    input {
+        margin: 5px auto;
     }
 }
 .hidden {
@@ -263,29 +267,74 @@ footer {
     }
 }
 
-//
-///********** Medium devices only **********/
-//@media (min-width: 992px) and (max-width: 1291px) {
-//    html, body {
-//        font-size: 16px;
-//    }
-//    .bxslider {
-//        p {
-//            font-size: 0.5rem;
-//        }
-//    }
-//}
-//
-///********** Small devices only **********/
-//@media (min-width: 768px) and (max-width: 991px) {
-//    html, body {
-//        font-size: 16px;
-//    }
-//}
-//
-///********** Extra small devices only **********/
-//@media (max-width: 767px) {
-//    html, body {
-//        font-size: 14px;
-//    }
-//}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1384px) {
+    html, body {
+        font-size: 0.9rem;
+    }
+    .small_photos_second_section {
+        flex-wrap: wrap;
+        .small_photo {
+        width: 48%;
+        
+        }
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 967px) and (max-width: 1052px) {
+    html, body {
+        font-size: 0.85rem;
+    }
+    
+     .small_photos_second_section {
+        flex-wrap: wrap;
+        .small_photo {
+        width: 48%;
+        
+        }
+    }
+}
+
+@media (min-width: 888px) and (max-width: 966px) {
+    html, body {
+        font-size: 0.8rem;
+    }
+    
+    .small_photos_second_section {
+        flex-wrap: wrap;
+        .small_photo {
+        width: 48%;
+        
+        }
+    }
+    .popup {
+        width: 500px;
+        height: 500px;
+    }
+}
+    
+@media (max-width: 887px) {
+    html, body {
+        font-size: 0.75rem;
+    }
+    .small_photos {
+        flex-wrap: wrap;
+        .small_photo {
+            width: 70%;
+            margin: 5px auto;
+        }
+    }
+    .small_photos_second_section {
+        flex-wrap: wrap;
+        .small_photo {
+        width: 48%;
+        
+        }
+    }
+    .popup { 
+        width: 500px;
+        height: 400px;
+    } 
+}
