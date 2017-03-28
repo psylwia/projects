@@ -6,7 +6,7 @@ $darkblue: #092b75;
 
 body {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 .container {
@@ -59,6 +59,7 @@ button {
 .header {
     padding: 10px;
     justify-content: center;
+    display: flex;
 }
 
 .menu {
@@ -72,7 +73,8 @@ button {
                 text-transform: uppercase;
                 padding: 0 10px;
                 margin: 0 2px;
-                font-weight: bold;
+//                font-weight: bold;
+                font-size: 1.1rem;
                 &:hover {
                     color: $darkblue;
                 }
@@ -80,6 +82,15 @@ button {
         }
     }
 }
+.sticky {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
 .social_icons {
     padding-top: 5px;
     justify-content: flex-end;
@@ -96,8 +107,20 @@ button {
 .logo {
     margin: 0 auto;
     margin-bottom: 5px;
-    width: 300px;
+    width: 250px;
     height: auto;
+}
+
+.logo_sticky {
+
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    img {
+    width: 250px;
+    height: 177px;
+//    margin: 0 auto;  
+    }
 }
 
 .bxslider {
@@ -136,7 +159,7 @@ button {
         height: 400px;
         background-size: cover;
         background-repeat: no-repeat;
-        border: 1px solid $grey;
+//        border: 1px solid $grey;
     }
         #photo_1 {
            background-image: url(../images/M16_1054a.jpg);
@@ -234,8 +257,10 @@ footer {
 
 // ***** Popup ***** //
 .popup {
-    background-image: url(../images/popup.jpg);
+    background-image: url(../images/popup2.jpg);
     background-size: cover; 
+    color: #fff;
+    z-index: 2;
     width: 500px;
     height: 600px;
     position: absolute;
@@ -271,7 +296,7 @@ footer {
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1384px) {
     html, body {
-        font-size: 0.9rem;
+//        font-size: 0.9rem;
     }
     .small_photos_second_section {
         flex-wrap: wrap;
@@ -285,7 +310,7 @@ footer {
 /********** Small devices only **********/
 @media (min-width: 967px) and (max-width: 1052px) {
     html, body {
-        font-size: 0.85rem;
+//        font-size: 0.85rem;
     }
     
      .small_photos_second_section {
@@ -299,7 +324,7 @@ footer {
 
 @media (min-width: 888px) and (max-width: 966px) {
     html, body {
-        font-size: 0.8rem;
+//        font-size: 0.8rem;
     }
     
     .small_photos_second_section {
@@ -317,7 +342,7 @@ footer {
     
 @media (max-width: 887px) {
     html, body {
-        font-size: 0.75rem;
+//        font-size: 0.75rem;
     }
     .small_photos {
         flex-wrap: wrap;

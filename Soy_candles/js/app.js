@@ -13,6 +13,24 @@ $(document).ready(function(){
      $(".button_x").click(function(){
         $('.popup').addClass('hidden');
     }); 
+    
+    var stickyNavTop = $('.menu').offset().top;
+ 
+    var stickyNav = function(){
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop > stickyNavTop) { 
+        $('.nav').addClass('sticky').removeClass('hidden');
+    } else {
+        $('.nav').removeClass('sticky').addClass('hidden'); 
+    }
+    };
+
+    stickyNav();
+
+    $(window).scroll(function() {
+      stickyNav();
+    });
 });
 
   
