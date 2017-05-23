@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps')
+var sourcemaps = require('gulp-sourcemaps');
+var browserSync = require('browser-sync').create();
 
 gulp.task('dev' , function() {
 return gulp.src('js/**/*.js')
@@ -15,10 +16,24 @@ gulp.task('sass', function() {
     .pipe(sass({errLogToConsole:true, outputStyle: 'expanded'}))
     .pipe(sourcemaps.write()) 
     .pipe(gulp.dest('css'))
-})
+});
+
+gulp.task('serve', ['sass'], function(){
+    
+    browserSync.init({
+        server: "./"
+    });
+    
+    gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('*.html').on('change', browserSync.reload);
+    gulp.watch('css/*.css').on('change', browserSync.reload);
+    gulp.watch('js/*.js').on('change', browserSync.reload);
+});
 
 gulp.task('watch', function(){
 gulp.watch('scss/**/*.scss', ['sass']);
-})
+});
 
-gulp.task('default', ['dev', 'sass', 'watch']);
+
+gulp.task('default', ['serve', 'dev', 'sass', 'watch']);
+
