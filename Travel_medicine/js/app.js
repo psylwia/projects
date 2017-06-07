@@ -10,7 +10,7 @@ $(document).ready(function(){
         var vaxAdvised = $(this).data('advised');
         var test = $('.test');   
     
-    var newDiv = $("<button class='button_x'>X</button><div class='box country'>" + countryName + "</div>" +  "<div class='box rutine'>Szczepienia rutynowe:</div><div class='box'>" + vaxRutine + "</div>" + "<div class='box required'>Szczepienia wymagane:</div><div class='box'>" + vaxRequired + "</div>" + "<div class='box advised'>Szczepienia zalecane:</div><div class='box'>" + vaxAdvised + "</div>");
+    var newDiv = $("<button class='button_x'>X</button><div class='box country'>" + countryName + "</div>" +  "<div class='box required'>Szczepienia wymagane:</div><div class='box'>" + vaxRequired + "</div>" + "<div class='box advised'>Szczepienia zalecane:</div><div class='box'>" + vaxAdvised + "</div>" + "<div class='box rutine'>Szczepienia zalecane wybranym podróżnym:</div><div class='box'>" + vaxRutine + "</div>" + );
     test.html(newDiv);
     
  
