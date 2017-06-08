@@ -273,3 +273,30 @@ figure.effect-dexter:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
+// Contact form
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  
+  input, textarea {
+     border: 1px solid $blue;
+     padding: 1em;
+     border-radius: 8px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+  }
+  
+  #input-submit {
+     color: $creme; 
+     background: $blue;
+     cursor: pointer;
+  }
+  
+  textarea {
+      height: 126px;
+  }
+}
