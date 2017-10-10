@@ -14,6 +14,7 @@
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
     <script src="js/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="https://use.fontawesome.com/18ee6abf31.js"></script>
     
 </head>
 <body>
@@ -63,13 +64,23 @@
                 </div>   
             </div>
             
+            <div>
+                <div id="porady_szczepienia">
+                    <h2>SZCZEPIENIA OBOWIĄZKOWE I ZALECANE</h2>
+                    <a href="images/szczepienia.pdf"><img id="szczepienia" src="images/szczepienia.jpg"></a></div>
+                <div id="porady_poradnik">
+                    <h2>Bezpiecznie w świat - PORADNIK DLA PODRÓŻNIKA</h2>
+                    <a href="images/poradnik.pdf"><img id="poradnik" src="images/poradnik.jpg"></a>
+                </div>
+            </div>
+            
        
         </div>   
     </section>
     
     <footer>
         <div class="container clearfix">
-            <span>Copyright (c)2017 PULS Sp. z o.o.</span>
+            <span>Copyright (c)2017 PULS Sp. z o.o. | Made with <i class="fa fa-coffee" aria-hidden="true"></i> and <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://pixel-witches.pl">Pixel Witches</a> </span>
         </div>
     </footer>
     <script src="js/app.js"></script>

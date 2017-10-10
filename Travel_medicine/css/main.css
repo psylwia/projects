@@ -107,6 +107,7 @@ footer div {
   text-align: center;
   border: 1px solid #c2c2c2;
   color: #c2c2c2;
+    padding: 5px;
 }
 
 table {
@@ -220,6 +221,14 @@ table tr:hover td {
   float: right;
 }
 
+#szczepienia, #poradnik {
+    height: 50%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
 #tel_number {
   text-align: center;
   font-weight: 700;
@@ -233,12 +242,12 @@ iframe {
   height: auto;
 }
 
-.kontakt #kontakt_polna {
+.kontakt #kontakt_polna, #porady_szczepienia {
   width: 50%;
   float: left;
 }
 
-.kontakt #map_polna {
+.kontakt #map_polna, porady_poradnik {
   width: 50%;
   float: right;
 }

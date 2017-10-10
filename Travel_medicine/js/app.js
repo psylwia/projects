@@ -10,8 +10,9 @@ $(document).ready(function(){
         var vaxAdvised = $(this).data('advised');
         var test = $('.test');   
     
-    var newDiv = $("<button class='button_x'>X</button><div class='box country'>" + countryName + "</div>" +  "<div class='box required'>Szczepienia wymagane:</div><div class='box'>" + vaxRequired + "</div>" + "<div class='box advised'>Szczepienia zalecane:</div><div class='box'>" + vaxAdvised + "</div>" + "<div class='box rutine'>Szczepienia zalecane wybranym podróżnym:</div><div class='box'>" + vaxRutine + "</div>" + );
-    test.html(newDiv);
+    var newDiv = $("<button class='button_x'>X</button><div class='box country'>" + countryName + "</div>" +  "<div class='box required'>Szczepienia wymagane:</div><div class='box'>" + vaxRequired + "</div>" + "<div class='box advised'>Szczepienia zalecane:</div><div class='box'>" + vaxAdvised + "</div>" + "<div class='box rutine'>Szczepienia zalecane wybranym podróżnym:</div><div class='box'>" + vaxRutine + "</div>");
+       test.html(newDiv);
+   
     
  
 // Funkcjonalność guzika zamknięcia okna
@@ -20,8 +21,8 @@ $(document).ready(function(){
         console.log('click');
         $('.vax_info').addClass('hidden');
     });
-            
- });  
+});            
+   
 // Podświetlenie aktywnej strony    
     var url = window.location.href; 
 
@@ -30,7 +31,7 @@ $(document).ready(function(){
             $(this).closest("li").addClass("active");
         }
     });
-});
+
 
 var map = document.querySelector('#map');
 var paths = map.querySelectorAll('.map_image a');
@@ -49,6 +50,7 @@ paths.forEach(function (path) {
    
    path.addEventListener('click', function(e){
        vax.classList.remove('hidden');
-   }); 
-
+   });
 });
+});
+
